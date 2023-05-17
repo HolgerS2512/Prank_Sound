@@ -1,0 +1,43 @@
+<div class="content-inherit w-100">
+
+    <div class="titel-card-body-start d-flex flex-column align-items-center">
+        <span id="titel-icon-break" class="titel-icon">
+            <i class="bi bi-soundwave color-icon"></i>
+        </span>
+        <span>
+            <h2 class="titel-text" style="margin:20px 0 0 0;">Shake for sound</h2>
+        </span>
+    </div>
+
+    <div class="titel-card-body-middle d-flex flex-column align-items-center justify-content-center">
+        <input type="checkbox" id="shake-btn" name="shake-btn" value="shake-btn">
+        <label for="shake-btn" class="btn btn-warning shadow col-9 blink">
+            Start shake
+            <span class="position-relative" style="height:4px;padding:0 8px 0 10px;">
+                <i class="bi bi-phone-vibrate-fill icon-play"></i>
+            </span>
+        </label>
+    </div>
+        
+    <div class="titel-card-body-end d-flex flex-column align-items-center">
+        <hr class="data-line w-100">
+
+        <div class="d-flex align-items-center col-md-auto mx-auto text-start">
+            <i class="bi bi-info-circle color-icon icon-info"></i>
+            <p class="text-info-foot">grinding<br>scratching<br>metal damage</p>
+        </div>
+    </div>
+</div>
+
+<div class="finisher position-fixed top-0 left-0">
+    <div class="finisher-body shadow-lg mx-auto my-auto position-relative top-50 d-flex justify-content-center align-items-center flex-column p-3">
+        <span style="padding-top:10px;">
+            Finish this shake!
+        </span>
+        <label for="shake-btn" class="finisher-btn blink">
+            <i class="bi bi-x-circle"></i>
+        </label>
+    </div>
+</div>
+
+<audio id="scratch-audio" src="../media/Scratch.mp3" type="type/mpeg"></audio>

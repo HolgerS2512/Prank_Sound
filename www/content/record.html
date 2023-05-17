@@ -1,0 +1,52 @@
+<div class="content-inherit w-100">
+
+    <div class="titel-card-body-start d-flex flex-column align-items-center">
+        <span id="titel-icon-break" class="titel-icon">
+            <i class="bi bi-camera-video color-icon"></i>
+        </span>
+        <span>
+            <h2 class="titel-text" style="margin:20px 0 0 0;">Record and sound</h2>
+        </span>
+    </div>
+
+    <div class="titel-card-body-middle d-flex flex-column align-items-center justify-content-center">
+        <input type="checkbox" id="record-btn" name="record-btn" value="record-btn">
+        <label for="record-btn" class="btn btn-warning shadow col-9 blink">
+            Start camcorder
+            <span class="position-relative" style="height:4px;padding:0 8px 0 10px;">
+                <i class="bi bi-record-fill icon-play"></i>
+            </span>
+        </label>
+    </div>
+
+    <div class="titel-card-body-end d-flex flex-column align-items-center">
+        <hr class="data-line w-100">
+
+        <div class="d-flex align-items-center col-md-auto mx-auto text-start">
+            <i class="bi bi-info-circle color-icon icon-info"></i>
+            <p class="text-info-foot">grinding<br>scratching<br>metal damage</p>
+        </div>
+    </div>
+</div>
+
+<div id="port-class">
+    <video id="port" class="fixed-top left-0 w-100 h-100 object-fit-cover z-1" playsinline autoplay muted></video>
+    <audio id="video-audio" src="../media/Scratch.mp3" type="type/mpeg"></audio>
+        <div class="port-time position-absolute top-0 left-0 w-100 d-flex justify-content-center align-items-center z-2">
+            <span class="port-time-null d-flex justify-content-center align-items-center">
+                00:00:00
+            </span>
+        </div>
+            <div class="port-box position-absolute left-0 bottom-0 w-100 d-flex align-items-center justify-content-evenly z-2">
+                <label for="record-btn" id="backRecording-btn">
+                    <i class="bi bi-arrow-left-circle-fill text-danger"></i>
+                </label>
+                <input type="checkbox" id="recording" name="recording" value="recording">
+                <label for="recording" class="recording position-relative">
+                    <span></span>
+                </label>
+                <span id="sound-btn">
+                    <i class="bi bi-play-circle-fill video-sound-btn position-relative"></i>
+                </span>
+            </div>
+</div>

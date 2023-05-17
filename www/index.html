@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+    <head>
+        <meta charset="utf-8">
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <application android:hardwareAccelerated="true"></application>
+
+        <title>Prank Sound</title>
+    </head>
+    <body>
+        <div class="splashscreen">
+            <img class="splash" src="../res/screen/splash-port-xxxhdpi.webp" alt="splash-port-xxxhdpi-webp">
+        </div>
+        <div class="app">
+                    
+                    <span class="fixed-top d-flex justify-content-end z-2">
+                        <i class="bi bi-share-fill share-btn"></i>
+                    </span>
+
+            <div class="content-box">
+                <div class="head-titel d-flex flex-column justify-content-center position-relative">
+                    <h1>Prank Sound</h1>
+                    <p>Prank your friends and family</p>
+                    <div class="position-absolute top-0 left-0 overflow-hidden w-100 opacity-25" style="pointer-events:none;">
+                        <img src="../media/scratch.webp" alt="scratch" class="position-relative" style="width:130%;height:130%;left:-40px;pointer-events:none;">
+                    </div>
+                </div>
+
+                <div id="content"></div>
+            </div>
+
+            <div class="navigation position-fixed bottom-0 left-0 d-flex justify-content-center align-items-center">
+                <ul class="d-flex">
+                    <li id="home" class="list position-relative z-1">
+                        <a class="position-relative d-flex justify-content-center align-items-center flex-column text-center">
+                            <span class="nav-icon position-relative d-block text-center">
+                                <i class="bi bi-house-door"></i>
+                            </span>
+                            <span class="nav-text position-absolute">Home</span>
+                        </a>
+                    </li>
+                    <li id="sound" class="list position-relative z-1">
+                        <a class="position-relative d-flex justify-content-center align-items-center flex-column text-center">
+                            <span class="nav-icon position-relative d-block text-center">
+                                <i class="bi bi-volume-up"></i>
+                            </span>
+                            <span class="nav-text position-absolute">Sound</span>
+                        </a>
+                    </li>
+                    <li id="shake" class="list position-relative z-1">
+                        <a class="position-relative d-flex justify-content-center align-items-center flex-column text-center">
+                            <span class="nav-icon position-relative d-block text-center">
+                                <i class="bi bi-soundwave"></i>
+                            </span>
+                            <span class="nav-text position-absolute">Shake</span>
+                        </a>
+                    </li>
+                    <li id="record" class="list position-relative z-1">
+                        <a class="position-relative d-flex justify-content-center align-items-center flex-column text-center">
+                            <span class="nav-icon position-relative d-block text-center">
+                                <i class="bi bi-camera-video"></i>
+                            </span>
+                            <span class="nav-text position-absolute">Record</span>
+                        </a>
+                    </li>
+                    <div class="indicator position-absolute"></div>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="./js/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="./css/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/sound.js"></script>
+        <script type="text/javascript" src="js/shake.js"></script>
+        <script type="text/javascript" src="js/record.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

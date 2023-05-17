@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-android-permissions","cordova-plugin-device-motion","cordova-plugin-dialogs","cordova-plugin-media-capture","cordova-plugin-file","es6-promise-plugin","cordova-plugin-camera","cordova-plugin-device","cordova-plugin-media","cordova-plugin-vibration","cordova-plugin-screen-orientation"]}
